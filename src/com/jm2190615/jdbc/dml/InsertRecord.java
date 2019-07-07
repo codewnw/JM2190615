@@ -17,7 +17,7 @@ public class InsertRecord {
 			Statement stmt = con.createStatement();
 
 			// 3. Execute the statement/command
-			int result = stmt.executeUpdate("INSERT INTO JM2190615_USER VALUES(1, 'INDIA')");
+			int result = stmt.executeUpdate("INSERT INTO JM2190615_USER VALUES(1, 'AUS')");
 
 			// 4. Process the returned result
 			if (result > 0) {
