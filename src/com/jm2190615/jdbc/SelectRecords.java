@@ -18,6 +18,7 @@ public class SelectRecords {
 				System.out.println(id + " " + name);
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
