@@ -7,12 +7,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import com.jm2190615.jdbc.util.DbUtil;
+
 public class StoreImage {
 	public static void main(String[] args) {
 		try {
 			FileInputStream fis = new FileInputStream("resources\\images\\tech-word-cloud.jpg");
 
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con = DbUtil.getCon();
 
 			PreparedStatement pstmt = con.prepareStatement("INSERT INTO JM2190615_PROFILE VALUES (?, ?)");
 			pstmt.setString(1, "Rohit");

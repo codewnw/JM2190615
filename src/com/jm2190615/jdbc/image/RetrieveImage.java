@@ -1,20 +1,20 @@
 package com.jm2190615.jdbc.image;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Blob;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import com.jm2190615.jdbc.util.DbUtil;
 
 public class RetrieveImage {
 
 	public static void main(String[] args) {
 		try {
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con = DbUtil.getCon();
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM JM2190615_PROFILE WHERE NAME = 'Rohit'");
 			rs.next();

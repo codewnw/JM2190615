@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+import com.jm2190615.jdbc.util.DbConnectionUtil;
+
 public class BatchInsertUsingPstmt {
 
 	public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class BatchInsertUsingPstmt {
 
 		try {
 			// 1. Establish connection
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con = DbConnectionUtil.getCon();
 			// 2. Create Statement
 			PreparedStatement pstmt = con.prepareStatement("INSERT INTO JM2190615_USER VALUES(?, ?)");
 
