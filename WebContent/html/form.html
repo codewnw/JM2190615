@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Learn HTML Form</title>
+</head>
+<body>
+	<h2>User Registration form</h2>
+	<form action="#" method="post">
+		<table border="1">
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" name="name" placeholder="Enter name" /></td>
+			</tr>
+			<tr>
+				<td>Age:</td>
+				<td><input type="number" name="age" placeholder="Enter age" /></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" placeholder="Enter email" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password"
+					placeholder="Enter password" /></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" name="gender" value="Male" />Male
+					&nbsp;&nbsp; <input type="radio" name="gender" value="Female" />Female</td>
+			</tr>
+			<tr>
+				<td>Courses:</td>
+				<td><input type="checkbox" name="courses" value="Core Java" />Module
+					1 &nbsp;&nbsp; <input type="checkbox" name="courses"
+					value="Advance Java" />Module 2 &nbsp;&nbsp; <input
+					type="checkbox" name="courses" value="Java Frameworks" />Module 3</td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td><select name="country">
+						<option value="">---SELCET---</option>
+						<option value="IND">India</option>
+						<option value="USA">United States of America</option>
+						<option value="UK">United Kingdom</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Query</td>
+				<td><textarea rows="5" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="Reset"></td>
+				<td><input type="submit" value="Register"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
